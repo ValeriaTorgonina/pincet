@@ -127,6 +127,44 @@
             </button>
         </section>
     </div>
+    <div class="popup">
+        <form class="form" action="#">
+            <span class="form__title"><br>Получите</br> программу обучения</span>
+            <p class="form__desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+            </p>
+            <select class="select" name="">
+                <option value="Повышение квалификации" selected>Повышение квалификации</option>
+                <option value="Пункт 1">Пункт 1</option>
+                <option value="Пункт 2">Пункт 2</option>
+                <option value="Пункт 3">Пункт 3</option>
+            </select>
+            <input class="input input--name" name="name" type="text" required placeholder="Ваше имя">
+            <input class="input input--tel" name="phone" type="tel" required pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"  placeholder="Ваш номер телефона" min="15">
+            <button class="button button--pink" type="submit" title="получить программу">получить программу</button>
+            <div class="loader">
+                <div class="loader__circle"></div>
+                <div class="loader__circle"></div>
+                <div class="loader__circle"></div>
+            </div>
+            <div class="form__decor"></div>
+        </form>
+        <section class="form-success" hidden>
+            <svg class="form-success__icon">
+                <use xlink:href="assets/img/sprite.svg#check"></use>
+            </svg>
+            <p class="form-success__text">
+                <b>Ваш заказ принят.</b><br>
+                Ожидайте звонка
+            </p>
+            <div class="form-success__decor"></div>
+        </section>
+        <button class="cross-btn" title="закрыть"></button>
+    </div>
+    <div class="overlay" hidden></div>
     <script src="js/main.js"></script>
 </body>
 
