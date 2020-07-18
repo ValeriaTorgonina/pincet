@@ -25,21 +25,25 @@
                         <div class="header__map"></div>
                         <span class="header__location-text">Мы находимся в центре:</span>
                         <span class="header__location-adress">г. Брест, ул. Гоголя, д.65</span>
-                        <button class="link">смотреть на карте</button>
+                        <button class="link" title="смотреть на карте">смотреть на карте</button>
                     </div>
                     <div class="header__schedule">
                         <div class="header__phone">
-                            <div class="header__schedule-icon"></div>
+                            <svg class="header__schedule-icon">
+                                <use xlink:href="assets/img/sprite.svg#phone"></use>
+                            </svg>
                             <span class="header__phone-text">Звоните, мы сейчас работаем</span>
                             <a href="tel:+375333822499" class="header__phone-number">+375 33 382 24 99</span>
                         </div>
-                        <div class="header__schedule-days">
-                            <div class="header__schedule-icon"></div>
+                        <div class="header__schedule-hours">
+                            <svg class="header__schedule-icon">
+                                <use xlink:href="assets/img/sprite.svg#hours"></use>
+                            </svg>
                             <span class="header__schedule-text">
                                 Пн-Вс <b>9:00-21:00</b>
                             </span>
                         </div>
-                        <button class="button button--white">
+                        <button class="button button--white" title="записаться онлайн">
                             <svg class="button__icon">
                                 <use xlink:href="assets/img/sprite.svg#calendar"></use>
                             </svg>
@@ -82,6 +86,46 @@
                 </nav>
             </div>
         </header>
+        <section class="intro">
+            <div class="container">
+                <section class="intro__content">
+                    <span class="main-title">
+                        Хотите избавиться от 
+                        <b>нежелательных волос</b>
+                        или нужен сеанс
+                        <b>антицеллюлитного массажа?</b> 
+                    </span>
+                </section>
+                <ul class="list">
+                    <li class="list__item">депиляция воском и Шугаринг;</li>
+                    <li class="list__item">профессиональные сертифицированные мастера;</li>
+                    <li class="list__item">работаем и с женщинами, и с мужчинами;</li>
+                    <li class="list__item">результат уже после первой процедуры.</li>
+                </ul>
+                <button class="button button--bink" title="получить карту">
+                    <span class="button__text">получить карту<br>клиента бесплатно</span>
+                </button>
+                <div class="intro__card">
+                    <button class="intro__card-button" title="информация">i</button>
+                    <div class="intro__card-popup">
+                        <p class="intro__card-text">
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et 
+                            dolore magna aliqua. Ut 
+                        </p>
+                    </div>
+                    <div class="intro__card-decor"></div>
+                    <div class="intro__spot"></div>
+                    <div class="intro__spot intro__spot--right"></div>
+                </div>
+            </div>
+            <button class="down-button" title="вниз">
+                <svg class="down-button__icon">
+                    <use xlink:href="assets/img/sprite.svg#down"></use>
+                </svg>
+            </button>
+        </section>
     </div>
     <script src="js/main.js"></script>
 </body>
