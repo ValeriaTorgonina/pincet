@@ -1,0 +1,40 @@
+body {
+    font-family: "Museo Sans Cyrl", Arial, sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, textarea, button {
+    background: none;
+    border: none;
+    resize: none;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
