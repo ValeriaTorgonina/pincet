@@ -1,5 +1,7 @@
 body {
     font-family: "Museo Sans Cyrl", Arial, sans-serif;
+    color: $black;
+    font-size: 14px;
 }
 
 body * {
@@ -37,4 +39,22 @@ img {
 
 h1, h2, h3, h4, p {
     margin: 0;
+}
+
+.link {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $pink;
+    padding: 5px;
+    border-bottom: 1px dashed $pink;
+    transition: 0.3s;
+
+    &:hover {
+        border-color: transparent;
+    }
+
+    &:active {
+        color: $black;
+    }
 }

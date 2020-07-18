@@ -1,0 +1,19 @@
+.button {
+    padding: 15px 20px;
+    border-radius: 30px;
+
+    &__icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    &--white {
+        display: flex;
+        align-items: center;
+        background: white;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+        box-shadow: 0 4px 0 0 $lightgray1;
+    }
+}

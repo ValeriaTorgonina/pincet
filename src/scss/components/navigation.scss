@@ -1,0 +1,23 @@
+.main-nav {
+    background: white;
+    border-radius: 5px;
+    padding: 0 20px;
+    box-shadow: 0 32px 0 -24px rgba(255, 255, 255, 0.6);
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        display: block;
+        color: $black;
+        font-size: 15px;
+        padding: 25px 10px;
+    }
+
+    &__burger {
+        display: none;
+    }
+}
