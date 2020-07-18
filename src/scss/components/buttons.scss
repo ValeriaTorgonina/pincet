@@ -64,3 +64,41 @@
         transform: translate(-50%, 0) scale(0.9);
     }
 }
+
+.cross-button {
+    width: 100px;
+    height: 100px;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 25px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: gray;
+        border-radius: 1px;
+        transition: 0.3s;
+    }
+
+    &:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &:hover {
+        &:before,
+        &:after {
+            background: $lightpink;
+        }
+    }
+
+    &:active {
+        &:before,
+        &:after {
+            background: $pink;
+        }
+    }
+}
