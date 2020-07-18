@@ -12,7 +12,76 @@
 
 <body>
     <div class="wrapper">
-        <h1>Hello world</h1>
+        <header class="main-header">
+            <div class="container">
+                <section class="main-header__info">
+                    <svg class="main-header__logo">
+                        <use xlink:href="assets/img/sprite.svg#logo"></use>
+                    </svg>
+                    <span class="header__desc">
+                        Студия депиляции и<br> массажный кабинет<br> в Бресте
+                    </span>
+                    <div class="header__location">
+                        <div class="header__map"></div>
+                        <span class="header__location-text">Мы находимся в центре:</span>
+                        <span class="header__location-adress">г. Брест, ул. Гоголя, д.65</span>
+                        <button class="link">смотреть на карте</button>
+                    </div>
+                    <div class="header__schedule">
+                        <div class="header__phone">
+                            <div class="header__schedule-icon"></div>
+                            <span class="header__phone-text">Звоните, мы сейчас работаем</span>
+                            <a href="tel:+375333822499" class="header__phone-number">+375 33 382 24 99</span>
+                        </div>
+                        <div class="header__schedule-days">
+                            <div class="header__schedule-icon"></div>
+                            <span class="header__schedule-text">
+                                Пн-Вс <b>9:00-21:00</b>
+                            </span>
+                        </div>
+                        <button class="button button--white">
+                            <svg class="button__icon">
+                                <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                            </svg>
+                            Записаться онлайн
+                        </button>
+                    </div>
+
+                </section>
+                <nav class="main-nav">
+                    <button class="main-nav__burger" title="menu"></button> 
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Главная</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Шугаринг и депиляция воском</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Антицеллюлитный массаж</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Класический массаж</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Обучение</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Косметика для мастеров</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Статьи</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">О студии</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     </div>
     <script src="js/main.js"></script>
 </body>
