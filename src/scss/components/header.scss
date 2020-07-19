@@ -17,6 +17,7 @@
         width: 290px;
         height: 130px;
         margin-right: 2.1vw;
+        object-fit: contain;
     }
 
     &__desc {
@@ -37,10 +38,19 @@
         width: 4vw;
         height: 4vw;
         border-radius: 50%;
-        background: white;
         float: left;
         margin-right: 25px;
         box-shadow: 0 0 10px -4px $lightgray;
+        background: white url("../../assets/img/map.jpg") 50% 50% no-repeat;
+        background-size: cover;
+    }
+
+    &__location-icon {
+        fill: $lightpink;
+        width: 20px;
+        height: 20px;
+        margin-top: 12px;
+        margin-left: 33px;
     }
 
     &__location-text {
@@ -105,13 +115,20 @@
     }
 
     &__schedule-icon {
-        width: 35px;
-        height: 35px;
+        width: 36px;
+        height: 36px;
         margin-right: 10px;
         border-radius: 50%;
         float: left;
         background: white;
         box-shadow: 0 0 10px -4px $lightgray;
+
+        svg {
+            fill: $lightpink;
+            width: 20px;
+            height: 20px;
+            margin: 8px;
+        }
     }
 
     &__schedule-text {
@@ -123,3 +140,4 @@
         }
     }
 }
+

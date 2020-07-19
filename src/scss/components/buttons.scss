@@ -3,8 +3,10 @@
     border-radius: 30px;
 
     &__icon {
-        width: 25px;
-        height: 25px;
+        fill: $lightpink;
+        width: 20px;
+        height: 20px;
+        margin: 8px;
     }
 
     &--white {
@@ -46,16 +48,23 @@
     border-radius: 50%;
     background: linear-gradient(to bottom, #f8b3b5, #f2989c);
     box-shadow: inset -2px -2px 0 0 #d7747a;
+
+    &__icon {
+        fill: white;
+        width: 28px;
+        height: 28px;
+    }
 }
 
 .down-button {
     position: absolute;
-    top: 0;
+    top: -48px;
     left: 50%;
-    width: 40px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
     transform: translate(-50%, 0);
-    border: 1px solid red;
+    background: url("../../assets/img/down.png") 50% 50% no-repeat;
+    background-size: contain;
 
     &:hover {
         filter: brightness(0.9);

@@ -15,26 +15,36 @@
         <header class="main-header">
             <div class="container">
                 <section class="main-header__info">
-                    <svg class="main-header__logo">
-                        <use xlink:href="assets/img/sprite.svg#logo"></use>
-                    </svg>
+                    <img src="./assets/img/logo.png" alt="лого pincet">
                     <span class="main-header__desc">
                         Студия депиляции и<br> массажный кабинет<br> в Бресте
                     </span>
                     <div class="main-header__location">
-                        <div class="main-header__map"></div>
+                        <div class="main-header__map">
+                            <svg class="main-header__location-icon">
+                                <use xlink:href="assets/img/sprite.svg#location"></use>
+                            </svg>
+                        </div>
                         <span class="main-header__location-text">Мы находимся в центре:</span>
                         <span class="main-header__location-adress">г. Брест, ул. Гоголя, д.65</span>
                         <button class="link" title="смотреть на карте">смотреть на карте</button>
                     </div>
                     <div class="main-header__schedule">
                         <div class="main-header__phone">
-                            <div class="main-header__schedule-icon"></div>
+                            <div class="main-header__schedule-icon">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#phone"></use>
+                                </svg>
+                            </div>
                             <span class="main-header__phone-text">Звоните, мы сейчас работаем</span>
                             <a href="tel:+375333822499" class="main-header__phone-number">+375 33 382 24 99</span>
                         </div>
                         <div class="main-header__schedule-hours">
-                            <div class="main-header__schedule-icon"></div>
+                            <div class="main-header__schedule-icon">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#time"></use>
+                                </svg>
+                            </div>
                             <span class="main-header__schedule-text">
                                 Пн-Вс <b>9:00-21:00</b>
                             </span>
@@ -100,7 +110,11 @@
                         <span class="button__text">получить карту<br>клиента бесплатно</span>
                     </button>
                     <div class="intro__card">
-                        <button class="info-button" title="информация"></button>
+                        <button class="info-button" title="информация">
+                            <svg class="info-button__icon">
+                                <use xlink:href="assets/img/sprite.svg#info"></use>
+                            </svg>
+                        </button>
                         <div class="intro__card-popup">
                             <p class="intro__card-text">
                                 Lorem ipsum dolor sit amet, 
@@ -116,11 +130,7 @@
             <div class="intro__spot intro__spot--left"></div>
             <div class="intro__spot intro__spot--right"></div>
             <div class="intro__wave">
-                <button class="down-button" title="вниз">
-                    <svg class="down-button__icon">
-                        <use xlink:href="assets/img/sprite.svg#down"></use>
-                    </svg>
-                </button>
+                <button class="down-button" title="вниз"></button>
             </div>
         </section>
     </div>
@@ -153,7 +163,7 @@
         </form>
         <section class="form-success">
             <svg class="form-success__icon">
-                <use xlink:href="assets/img/sprite.svg#check"></use>
+                <use xlink:href="assets/img/sprite.svg#success"></use>
             </svg>
             <p class="form-success__text">
                 <b>Ваш заказ принят.</b><br>
@@ -163,7 +173,7 @@
         </section>
         <button class="cross-button" title="закрыть"></button>
     </div>
-    <div class="overlay active"></div>
+    <div class="overlay active" hidden></div>
     <script src="js/main.js"></script>
 </body>
 
