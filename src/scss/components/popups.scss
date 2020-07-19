@@ -5,12 +5,34 @@
     transform: translate(-50%, -50%);
     z-index: 6;
     transition: 0.5s;
+    animation: show-popup 0.5s;
+    opacity: 0;
 
     .cross-button {
         position: absolute;
         top: 0;
         right: 0;
     }
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+.intro__card-popup {
+    position: absolute;
+    width: 175px;
+    height: 210px;
+    top: 0px;
+    left: 172px;
+    transform: translate(0, 0);
+    padding: 30px 22px;
+    border-radius: 5%;
+    border-top-left-radius: 100px 25px;
+    border-top-right-radius: 100px 25px;
+    background: white;
+    z-index: 1;
+    box-shadow: 10px -8px 0 0 rgba(255, 255, 255, 0.5);
 }
 
 .overlay {
@@ -22,10 +44,28 @@
     background: black;
     transition: 0.5s;
     opacity: 0;
-    // animation: show-overlay 0.5s;
+    animation: show-overlay 0.5s;
     z-index: 5;
 
     &.active {
+        opacity: 0.7;
+    }
+}
+
+@keyframes show-popup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes show-overlay {
+    0% {
+        opacity: 0;
+    }
+    100% {
         opacity: 0.7;
     }
 }

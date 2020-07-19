@@ -1,3 +1,7 @@
+body *[hidden] {
+    display: none;
+}
+
 body {
     font-family: "Museo Sans Cyrl", Arial, sans-serif;
     color: $black;

@@ -29,6 +29,7 @@
     }
 
     &__location {
+        position: relative;
         width: 320px;
         margin-right: 3vw;
         font-size: 16px;
@@ -43,6 +44,14 @@
         box-shadow: 0 0 10px -4px $lightgray;
         background: white url("../../assets/img/map.jpg") 50% 50% no-repeat;
         background-size: cover;
+    }
+
+    &__map-field {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: 1;
+        box-shadow: 0 0 5px 0 gray;
     }
 
     &__location-icon {

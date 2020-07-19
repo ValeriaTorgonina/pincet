@@ -1,10 +1,100 @@
-.input {
-    width: 500px;
-    border-radius: 50px;
-    padding: 30px;
-    background: white;
-    color: gray;
-    border: 1px solid $lightpink1;
-    margin-bottom: 20px;
-    font-size: 18px;
+
+
+// .select {
+//   position: relative;
+
+//   &[data-state="active"] {
+//     .select__title {
+//       &::before {
+//         transform: translate(-3px, -50%) rotate(-45deg);
+//       }
+
+//       &::after {
+//         transform: translate(3px, -50%) rotate(45deg);
+//       }
+//     }
+    
+//     .select__content {
+//       opacity: 1;
+//     }
+    
+//     .select__label + .select__input + .select__label {
+//       max-height: 40px;
+//       border-top-width: 1px;
+//     }
+//   }
+// }
+// .select__title {
+//   cursor: pointer;
+
+//   &::before,
+//   &::after {
+//     content: "";
+
+//     position: absolute;
+//     top: 50%;
+//     right: 30px;
+
+//     display: block;
+//     width: 10px;
+//     height: 2px;
+
+//     transition: all 0.3s ease-out;
+
+//     background-color: gray;
+
+//     transform: translate(-3px, -50%) rotate(45deg);
+//   }
+//   &::after {
+//     transform: translate(3px, -50%) rotate(-45deg);
+//   }
+// }
+// .select__content {
+//   position: absolute;
+//   top: 61px;
+//   left: 5px;
+//   display: flex;
+//   flex-direction: column;
+//   width: calc(100% - 10px);
+//   background-color: #ffffff;
+//   border: 1px solid #fbeeef;
+//   border-top: none;
+//   border-bottom-left-radius: 5px;
+//   border-bottom-right-radius: 5px;
+//   transition: all 0.3s ease-out;
+//   opacity: 0;
+//   z-index: 8;
+// }
+// .select__input {
+//   display: none;
+// }
+// .select__label {
+//   display: flex;
+//   align-items: center;
+//   width: 100%;
+//   height: 40px;
+//   max-height: 0;
+//   padding: 0 16px;
+  
+//   transition: all 0.2s ease-out;
+
+//   cursor: pointer;
+  
+//   overflow: hidden;
+
+//   &:hover {
+//     background-color: $lightpink1 !important;
+//   }
+// }
+
+.input,
+.select {
+  width: 500px;
+  border-radius: 50px;
+  padding: 30px;
+  background: white;
+  color: gray;
+  border: 1px solid $lightpink1;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
