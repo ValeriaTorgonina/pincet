@@ -23,21 +23,28 @@
     &__desc {
         display: block;
         width: 150px;
-        font-size: 14px;
+        font-size: 0.9rem;
         font-weight: 300;
-        margin-right: 7vw;
+        margin-right: 4vw;
+    }
+
+    &__info-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 50vw;
     }
 
     &__location {
         position: relative;
-        width: 320px;
-        margin-right: 3vw;
-        font-size: 16px;
+        width: 300px;
+        margin-right: 2vw;
+        font-size: 1rem;
     }
 
     &__map {
-        width: 4vw;
-        height: 4vw;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         float: left;
         margin-right: 25px;
@@ -52,6 +59,11 @@
         left: 0;
         z-index: 1;
         box-shadow: 0 0 5px 0 gray;
+
+        iframe {
+            width: 40vw;
+            height: 50vh;
+        }
     }
 
     &__location-icon {
@@ -93,7 +105,7 @@
         display: inline-block;
         padding-right: 2px;
         margin-bottom: 5px;
-        font-size: 12px;
+        font-size: 0.8rem;
         font-weight: 500;
 
         &:before {
@@ -111,9 +123,9 @@
     }
 
     &__phone-number {
-        font-size: 23px;
+        font-size: 1.4rem;
         font-weight: 500;
-        color: black;
+        color: $black;
         display: block;
     }
 
@@ -121,6 +133,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        width: 100%;
     }
 
     &__schedule-icon {
@@ -141,11 +154,163 @@
     }
 
     &__schedule-text {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 300;
 
         b {
             font-weight: 700;
+        }
+    }
+
+    @media(max-width: 1470px) {
+        &__info {
+            padding: 10px 0;
+        }
+
+        &__logo {
+            width: 200px;
+            height: 90px;
+            margin-right: 1vw;
+        }
+
+        &__schedule {
+            margin-right: 1.5vw;
+            width: 225px;
+        }
+    }
+
+    @media (max-width: 1300px) {
+
+        &__desc {
+            width: 100px;
+        }
+
+        &__schedule {
+            width: 190px;
+        }
+
+        &__map {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        &__logo {
+            width: 135px;
+            height: 60px;
+        }
+
+        &__info-container {
+            min-width: 60vw;
+        }
+
+        &__map {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        &__schedule {
+            width: 182px;
+        }
+
+        &__schedule-icon {
+            width: 26px;
+            height: 26px;
+
+            svg {
+                width: 14px;
+                height: 14px;
+                margin: 6px;
+            }
+        }
+
+        &__phone-text {
+            font-size: 9px;
+
+            &:before {
+                top: 2px;
+            }
+        }
+
+        &__phone-number {
+            font-size: 1.7rem;
+        }
+
+        &__location {
+            width: 190px;
+        }
+
+        &__location-adress,
+        &__location-text {
+            line-height: 18px;
+            margin-bottom: 0;
+        }
+
+        .button {
+            padding: 5px 15px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        height: 100px;
+
+        .container {
+            height: 100px;
+        }
+
+        &__info {
+            justify-content: start;
+        }
+
+        &__logo {
+            margin-right: 30px;
+        }
+
+        &__info-container { 
+            position: absolute;
+            top: 75px;
+            right: -800px;
+            flex-wrap: wrap;
+            max-width: 500px;
+            min-width: auto;
+            padding: 30px;
+            transition: 0.3s;
+            z-index: 3;
+
+            &.open {
+                right: 0px;
+            }
+
+            & > * {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    @media (max-width: 645px) {
+        &__info-container { 
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__logo {
+            margin-right: 10px;
+        }
+
+        &__map-field {
+            iframe {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    @media (max-width: 420px) {
+        &__info-container { 
+            flex-direction: column;
+            align-items: flex-start;
         }
     }
 }

@@ -129,6 +129,33 @@ class Form {
     }
 }
 
+class Header {
+    constructor() {
+        this.header = document.querySelector('.main-header');
+        this.headerMenu = this.header.querySelector('.main-nav');
+        this.headerContent = this.header.querySelector('.main-header__info-container');
+        this.menuBtn = this.header.querySelector('.menu-button');
+        this.menuIcon = this.menuBtn.querySelector('.menu-button__icon--menu');
+        this.crossIcon = this.menuBtn.querySelector('.menu-button__icon--cross');
+
+        this.addHandlerForMenuBtn();
+    }
+
+    addHandlerForMenuBtn() {
+        this.menuBtn.onclick = () => {            
+            this.headerContent.classList.toggle('open');
+            this.headerMenu.classList.toggle('open');
+            if(this.headerMenu.classList.contains('open')) {
+                this.menuIcon.style.display = "none";
+                this.crossIcon.style.display = "block";
+            }else {
+                this.crossIcon.style.display = "none";
+                this.menuIcon.style.display = "block";
+            }
+        }
+    }
+};
+
 class Map {
     constructor() {
         this.mapBtn = document.querySelector('.main-header__location .link');
@@ -176,6 +203,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ]);
 
     const map = new Map();
+    const header = new Header();
 
     var scene = document.getElementById('scene');
     var parallaxInstance = new Parallax(scene);

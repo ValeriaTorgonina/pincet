@@ -1,4 +1,17 @@
 .container {
-    width: 82vw;
+    max-width: 82vw;
     margin: 0 auto;
+
+    @media(max-width: 1760px) {
+        max-width: 95vw;
+    }
+
+    @media (max-width: 992px) {
+        max-width: 100%;
+        padding: 0 40px;
+    }
+
+    @media (max-width: 420px) {
+        padding: 0 20px;
+    }
 }

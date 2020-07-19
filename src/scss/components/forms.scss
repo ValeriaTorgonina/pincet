@@ -10,7 +10,7 @@
 
     &__title {
         display: block;
-        font-size: 36px;
+        font-size: 2.2rem;
         font-weight: 300;
         margin-bottom: 15px;
         b {
@@ -19,24 +19,24 @@
     }
 
     &__desc {
-        font-size: 16px;
+        font-size: 1rem;
         margin-bottom: 35px;
         text-align: center;
     }
 
     .input {
         z-index: 1;
-    }
+    } 
 
     .button {
         position: relative;
-        width: 500px;
+        width: 100%;
         text-align: left;
         padding-left: 70px;
 
         &__text {
             letter-spacing: 2px;
-            font-size: 18px;
+            font-size: 1.2rem;
         }
 
         &:before {
@@ -62,6 +62,70 @@
         background: url("../../assets/img/notebook.png") 50% 50% no-repeat;
         background-size: contain;
     }
+
+    @media(max-width: 1470px) {
+        width: 600px;
+        padding: 50px 70px;
+
+        &__decor {
+            width: 175px;
+            height: 260px;
+        }
+
+        .button {
+            padding: 20px;
+        }
+    }
+
+    @media(max-width: 1300px) {
+        width: 500px;
+
+        &__desc {
+            margin-bottom: 20px;
+        }
+
+        &__decor {
+            top: 80px;
+            left: -60px;
+        }
+
+        .button {
+            padding: 15px 20px;
+        }
+    }
+
+    @media(max-width: 645px) {
+        padding: 40px 30px;
+        width: 300px;
+        border-radius: 25px;
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__decor {
+            display: none;
+        }
+
+        &__desc {
+            font-size: 9px;
+        }
+
+        .button {
+            padding: 10px 15px;
+
+            &__text {
+                font-size: 9px;
+            }
+
+            &:before {
+                width: 100px;
+                height: 25px;
+                top: 50%;
+                left: 95%;
+            }
+        }
+    }
 }
 
 .form-success {
@@ -83,11 +147,47 @@
     }
 
     &__text {
-        font-size: 30px;
+        font-size: 2rem;
         font-weight: 300;
 
         b {
             font-weight: 700;
+        }
+    }
+
+    @media(max-width: 1470px) {
+        width: 400px;
+        padding: 70px;
+
+        &__icon {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    @media(max-width: 1300px) {
+        width: 300px;
+        padding: 50px;
+
+        &__icon {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 15px;
+        }
+    }
+
+    @media(max-width: 645px) {
+        padding: 30px;
+        width: 200px;
+        border-radius: 25px;
+
+        &__icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__text {
+            font-size: 12px;
         }
     }
 }

@@ -1,23 +1,70 @@
 .main-nav {
     background: white;
     border-radius: 5px;
-    padding: 0 20px;
     box-shadow: 0 32px 0 -24px rgba(255, 255, 255, 0.6);
 
     &__list {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 20px;
     }
 
     &__link {
-        display: block;
+        display: inline-block;
         color: $black;
-        font-size: 15px;
+        font-size: 1.05rem;
         padding: 25px 10px;
+
+        &:hover {
+            color: $lightpink;
+        }
+
+        &:active {
+            color: $pink;
+        }
     }
 
     &__burger {
         display: none;
+    }
+
+    @media (max-width: 1300px) {
+        box-shadow: 0 18px 0 -12px rgba(255, 255, 255, 0.6);
+
+        &__link {
+            padding: 15px 7px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        border-radius: 5px 0 0 5px;
+        padding-top: 200px;
+        position: absolute;
+        top: 75px;
+        right: -800px;
+        max-width: 500px;
+        box-shadow: 0 0 15px -5px gray;
+        background: url("../../assets/img/form-bg.jpg") 50% 50% no-repeat;
+        background-size: cover;
+        transition: 0.3s;
+
+        &.open {
+            right: 0px;
+        }
+
+        &__list {
+            flex-wrap: wrap;
+            background: white;
+            border-radius: 0 0 0 5px;
+        }
+    }
+
+    @media (max-width: 645px) {
+        max-width: 100%;
+    }
+
+    @media (max-width: 420px) {
+        padding-top: 300px;
     }
 }

@@ -1,7 +1,9 @@
 .intro {
+    position: relative;
+    overflow: hidden;
     width: 100%;
     height: 100vh;
-    background: $lightpink1 url(../../assets/img/intro-bg.jpg) 50% 100% no-repeat;
+    background: $lightpink1 url(../../assets/img/intro-bg.jpg) 100% 0% no-repeat;
     background-size: cover;
 
     &__content {
@@ -18,12 +20,12 @@
 
     .main-title {
         display: inline-block;
-        margin-top: 10vh;
-        margin-bottom: 60px;
+        margin-top: 12vh;
+        margin-bottom: 4vh;
     }
 
     .list {
-        margin-bottom: 50px;
+        margin-bottom: 3vh;
     }
 
     .button  {
@@ -48,7 +50,7 @@
         position: absolute;
         width: 175px;
         height: 210px;
-        bottom: 18%;
+        bottom: 14%;
         right: 20%;
         transform: translate(100%, -50%);
     }
@@ -95,8 +97,6 @@
     }
 
     &__spot {
-        top: 7vh !important;
-        right: -5vw !important;
         &--left {
             top: 30vh !important;
             left: 5vw !important;
@@ -120,12 +120,137 @@
     &__wave {
         position: absolute;
         width: 100%;
-        height: 180px;
+        height: 160px;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 0);
         background: url("../../assets/img/wave.png") 50% 0% no-repeat;
         background-size: cover;
         z-index: 1;
+    }
+
+    @media(max-width: 1470px) {
+        &__card {
+            height: 175px;
+            right: 25%;
+            bottom: 10%;
+        }
+
+        &__card-decor {
+            height: 430px; 
+            width: 700px;
+            left: -112px;
+        }
+
+        &__card-popup {
+            top: -35px;
+        }
+
+        .button {
+            padding-right: 95px;
+            &:before {
+                width: 190px;   
+                height: 50px;
+            }
+        }
+
+        &__wave {
+            bottom: -30px;
+            height: 115px;
+        }
+
+        &__spot {
+            &--left {
+                top: 30vh !important;
+                left: 3vw !important;
+                width: 220px;
+                height: 200px;
+            }
+    
+            &--right {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+
+    @media(max-width: 1300px) {
+        &__card {
+            transform: translate(100%, -50%) scale(0.8);
+            right: 30%;
+            bottom: 4%;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .button {
+            padding-right: 80px;
+
+            &:before {
+                width: 145px;
+                height: 40px;
+            }
+        }
+
+        &__wave {
+            height: 95px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        background: $lightpink1 url(../../assets/img/intro-bg--mobil.jpg) 100% 0% no-repeat;
+        background-size: cover;
+
+        &__card {
+            transform: translate(100%, -50%) scale(0.9);
+            right: 0%;
+            bottom: 13%;
+        }
+
+        .main-title {
+            margin-top: 0vh;
+        }
+
+        &__spot {
+            &--left {
+                left: 7vw !important;
+                width: 157px;
+                height: 140px;
+            }
+    
+            &--right {
+                width: 130px;
+                height: 130px;
+                top: 10vh !important;
+            }
+        }
+    }
+
+    @media (max-width: 745px) {
+        &__content {
+            width: auto;
+            max-width: 400px;
+        }
+
+        .main-title {
+            font-size: 20px;
+        }
+
+        &__card {
+            transform: translate(100%, -50%) scale(0.7);
+            right: 19%;
+            bottom: 13%;
+        }
+    }
+
+    @media (max-width: 645px) {
+        &__content {
+            max-width: 100%;
+            padding-left: 0;
+        }
+
+        &__card {
+            display: none;
+        }
     }
 }

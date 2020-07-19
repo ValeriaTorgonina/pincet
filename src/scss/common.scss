@@ -52,7 +52,7 @@ h1, h2, h3, h4, p {
 }
 
 .link {
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: 500;
     text-transform: uppercase;
     color: $pink;
@@ -70,10 +70,28 @@ h1, h2, h3, h4, p {
 }
 
 .main-title {
-    font-size: 48px;
+    font-size: calc(-6px + 3vw);
     font-weight: 300;
 
     b {
         font-weight: 700;
+    }
+}
+
+@media (max-width: 1470px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1300px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 1100px) {
+    html {
+        font-size: 10px;
     }
 }

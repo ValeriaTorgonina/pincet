@@ -15,53 +15,65 @@
         <header class="main-header">
             <div class="container">
                 <section class="main-header__info">
-                    <img src="./assets/img/logo.png" alt="лого pincet">
+                    <a href="#" class="main-header__link">
+                        <img class="main-header__logo" src="./assets/img/logo.png" alt="лого pincet">
+                    </a>
                     <span class="main-header__desc">
                         Студия депиляции и<br> массажный кабинет<br> в Бресте
                     </span>
-                    <div class="main-header__location">
-                        <div class="main-header__map">
-                            <svg class="main-header__location-icon">
-                                <use xlink:href="assets/img/sprite.svg#location"></use>
-                            </svg>
-                        </div>
-                        <span class="main-header__location-text">Мы находимся в центре:</span>
-                        <span class="main-header__location-adress">г. Брест, ул. Гоголя, д.65</span>
-                        <button class="link" title="смотреть на карте">смотреть на карте</button>
-                        <div class="main-header__map-field" hidden>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.6233944869814!2d23.695988724655336!3d52.093361964082455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bfa0846eda1%3A0x9d8826f6a26a2b91!2z0YPQuy4g0JPQvtCz0L7Qu9GPIDY1LCDQkdGA0LXRgdGCLCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sru!4v1595160226046!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                    </div>
-                    <div class="main-header__schedule">
-                        <div class="main-header__phone">
-                            <div class="main-header__schedule-icon">
-                                <svg>
-                                    <use xlink:href="assets/img/sprite.svg#phone"></use>
-                                </svg>
-                            </div>
-                            <span class="main-header__phone-text">Звоните, мы сейчас работаем</span>
-                            <a href="tel:+375333822499" class="main-header__phone-number">+375 33 382 24 99</span>
-                        </div>
-                        <div class="main-header__schedule-hours">
-                            <div class="main-header__schedule-icon">
-                                <svg>
-                                    <use xlink:href="assets/img/sprite.svg#time"></use>
-                                </svg>
-                            </div>
-                            <span class="main-header__schedule-text">
-                                Пн-Вс <b>9:00-21:00</b>
-                            </span>
-                        </div>
-                    </div>
-                    <button class="button button--white" title="записаться онлайн">
-                        <svg class="button__icon">
-                            <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                    <button class="menu-button" title="menu">
+                        <svg class="menu-button__icon menu-button__icon--menu">
+                            <use xlink:href="./assets/img/sprite.svg#menu"></use>
                         </svg>
-                        Записаться онлайн
+                        <svg class="menu-button__icon menu-button__icon--cross">
+                            <use xlink:href="./assets/img/sprite.svg#cross"></use>
+                        </svg>
                     </button>
+                    <div class="main-header__info-container">
+                        <div class="main-header__location">
+                            <div class="main-header__map">
+                                <svg class="main-header__location-icon">
+                                    <use xlink:href="assets/img/sprite.svg#location"></use>
+                                </svg>
+                            </div>
+                            <span class="main-header__location-text">Мы находимся в центре:</span>
+                            <span class="main-header__location-adress">г. Брест, ул. Гоголя, д.65</span>
+                            <button class="link" title="смотреть на карте">смотреть на карте</button>
+                            <div class="main-header__map-field" hidden>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.6233944869814!2d23.695988724655336!3d52.093361964082455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bfa0846eda1%3A0x9d8826f6a26a2b91!2z0YPQuy4g0JPQvtCz0L7Qu9GPIDY1LCDQkdGA0LXRgdGCLCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sru!4v1595160226046!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="main-header__schedule">
+                            <div class="main-header__phone">
+                                <div class="main-header__schedule-icon">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#phone"></use>
+                                    </svg>
+                                </div>
+                                <span class="main-header__phone-text">Звоните, мы сейчас работаем</span>
+                                <a href="tel:+375333822499" class="main-header__phone-number">+375 33 382 24 99</span>
+                            </div>
+                            <div class="main-header__schedule-hours">
+                                <div class="main-header__schedule-icon">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#time"></use>
+                                    </svg>
+                                </div>
+                                <span class="main-header__schedule-text">
+                                    Пн-Вс <b>9:00-21:00</b>
+                                </span>
+                            </div>
+                        </div>
+                        <button class="button button--white" title="записаться онлайн">
+                            <svg class="button__icon">
+                                <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                            </svg>
+                            Записаться онлайн
+                        </button>
+                    </div>
+
                 </section>
-                <nav class="main-nav">
-                    <button class="main-nav__burger" title="menu"></button> 
+                <nav class="main-nav"> 
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
                             <a href="#" class="main-nav__link">Главная</a>
