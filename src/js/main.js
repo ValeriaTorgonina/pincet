@@ -156,53 +156,14 @@ class Header {
     }
 };
 
-class Map {
-    constructor() {
-        this.mapBtn = document.querySelector('.main-header__location .link');
-        this.mapField = document.querySelector('.main-header__map-field');
-
-        this.addHandlersFormapBtn();
-        this.closePopup();
-    }
-
-    addHandlersFormapBtn() {
-        this.mapBtn.addEventListener('click', () => {
-            this.mapField.removeAttribute('hidden');
-        })
-    }
-
-    closePopup() {
-        document.body.addEventListener('click', e => {
-            let target = e.target;
-            let currentTarget = e.currentTarget;
-            let isMap = false;
-            let isOpenBtn = false;
-            while(target !== currentTarget) {
-                if(target.classList.contains('.map-field')) {
-                    isMap = true;
-                }
-                if(target == this.mapBtn) {
-                    isOpenBtn = true;
-                }
-                target = target.parentElement;
-            }
-            if(!isMap && !isOpenBtn) {
-                this.mapField.setAttribute('hidden', 'true');
-            }
-        })
-    }
-}
-
 document.addEventListener("DOMContentLoaded", function() {
     const form = new Form();
     const popup = new Popup([
         ...document.querySelectorAll('.cross-button')
     ],[
-        ...document.querySelectorAll('.open-form'),
-        ...document.querySelectorAll('.info-button')
+        ...document.querySelectorAll('.open-form')
     ]);
 
-    const map = new Map();
     const header = new Header();
 
     var scene = document.getElementById('scene');

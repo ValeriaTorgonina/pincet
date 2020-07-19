@@ -70,6 +70,13 @@
   opacity: 0;
   z-index: 8;
 
+  @media(max-width: 1470px) {
+    top: 47px;
+  }
+  @media(max-width: 1300px) {
+    top: 39px;
+  }
+
   @media(max-width: 645px) {
     top: 28px;
   }

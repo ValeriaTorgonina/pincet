@@ -53,6 +53,7 @@
         bottom: 14%;
         right: 20%;
         transform: translate(100%, -50%);
+        transition: 0.3s;
     }
 
     &__card-decor {
@@ -73,10 +74,11 @@
         transform: translate(50%, 50%);
 
         &:hover {
-            filter: brightness(0.9);
-        }
-        &:active {
-            transform: translate(50%, 50%) scale(0.9);
+            animation: none;
+
+            & + .intro__card-popup {
+                opacity: 1;
+            }
         }
     }
 
